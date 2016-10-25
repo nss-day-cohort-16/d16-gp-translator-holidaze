@@ -1,6 +1,6 @@
-"use strict"
+"use strict";
 
-var translate = (function() {
+var translate = (function(fromTagalog) {
 	var german = {
 		happy: "glücklich",
 		christmas: "Weihnachten"
@@ -11,10 +11,5 @@ var translate = (function() {
 			return german[language];
 		}
 	};
-})();
+})(translate);
 
-console.log("translated", translate);
-
-var germanTranslation = translate.getTranslateToGerman("happy");
-
-console.log("happy", germanTranslation);
