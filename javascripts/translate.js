@@ -12,13 +12,13 @@ translateButton.addEventListener("click", function() {
 		output.innerHTML = input;
 	} else if (languageSelect === "Tagalog") {
 		console.log("Tagalog")
-		var translatedWord = translate.translateToTagalog(input);
 		// output.innerHTML = translatedWord;
 
 		var tagalogArr = input.split(" ");
-		// for (i = 0; i < tagalogArr.length; i++) {
-			// output.innerHTML = translatedWord[i];
-		// console.log(tagalogArr);
+	for (var i = 0; i < tagalogArr.length; i++) {
+		var translatedWord = translate.translateToTagalog(tagalogArr[i]);
+		output.innerHTML += translatedWord + " ";
+		console.log(tagalogArr);
 	};
 
 	} else if (languageSelect === "French") {
