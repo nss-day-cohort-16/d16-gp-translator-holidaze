@@ -1,15 +1,23 @@
-"use strict";
+"use strict"
 
-var translate = (function(fromTagalog) {
+var translate = (function(oldFunc) {
 	var german = {
 		happy: "glücklich",
-		christmas: "Weihnachten"
+		christmas: "Weihnachten",
+		santa: "Santa",
+		claus: "Klaus",
+		is: "ist",
+		coming: "kommen",
+		to: "nach",
+		town: "stadt"
 	};
 
-	return {
-		getTranslateToGerman: function(language) {
+
+		oldFunc.translateToGerman = function(language) {
 			return german[language];
-		}
-	};
+		};
+
+	 return oldFunc;
+
 })(translate);
 
