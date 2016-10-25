@@ -3,14 +3,20 @@
 var translate = (function(oldFunc) {
   var italian = {
     happy: "Buono",
-    christmas: "Natale"
+    christmas: "Natale",
+    santa: "Babbo",
+    claus: "Natale",
+    is: "è",
+    coming: "venuta",
+    to: "verso",
+    town: "la città"
   };
 
-  return {
-      translateToItalian: function(language) {
+      oldFunc.translateToItalian = function(language) {
       console.log("test");
       return italian[language];
-    }
-  // return oldFunc;
-  };
-})(translate || {});
+    };
+
+  return oldFunc;
+
+})(translate);

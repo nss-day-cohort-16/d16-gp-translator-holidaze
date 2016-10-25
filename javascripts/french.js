@@ -1,16 +1,20 @@
 "use strict";
 
-var translate = (function() {
+var translate = (function(oldFunc) {
 	var french = {
 		happy: "Content",
-		christmas: "Noël"
+		christmas: "Noël",
+		santa: "Père",
+		claus: "Noël",
+		is: "est",
+		coming: "arrivant",
+		to: "à",
+		town: "ville"
 	};
 
-	return {
-			translateToFrench: function(language) {
-			console.log("test");
+		oldFunc.translateToFrench = function(language) {
 			return french[language];
-		}
-	// return oldFunc;
-	};
-})();
+		};
+	return oldFunc;
+
+})(translate);

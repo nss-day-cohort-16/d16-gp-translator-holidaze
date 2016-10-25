@@ -8,14 +8,29 @@ body {
 	letter-spacing: .05em;
 }
 
+img {
+	box-sizing: border-box;
+	margin-left: 32%
+}
+
 h1 {
-	color: black;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 3em;
+	font-weight: 200;
+	color: #971A23;
 }
 
 h3 {
 	text-align: center;
-	margin-top: 6em;
+	margin-top: .75em;
+	margin-bottom: .10em;
 	font-weight: 200;
+}
+
+p {
+	text-align: center;
+	margin-top: 0;
 }
 
 #textArea {
@@ -51,4 +66,8 @@ button {
 	text-align: center;
 	font-size: 2em;
 	padding-top: 1.75em;
+}
+
+#or {
+	text-align: center;
 }
