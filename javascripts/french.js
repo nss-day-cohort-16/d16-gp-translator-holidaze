@@ -1,7 +1,7 @@
 "use strict";
 
 var translate = (function() {
-	var tagalog = {
+	var french = {
 		happy: "Content",
 		christmas: "Noël"
 	};
