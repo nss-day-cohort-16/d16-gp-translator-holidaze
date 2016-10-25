@@ -13,4 +13,4 @@ var translate = (function(oldFunc) {
     }
   // return oldFunc;
   };
-})(oldFunc || {});
+})(translate || {});
