@@ -7,9 +7,9 @@ var translate = (function() {
 	};
 
 	return {
-			translateToTagalog: function(language) {
+			translateToFrench: function(language) {
 			console.log("test");
-			return tagalog[language];
+			return french[language];
 		}
 	// return oldFunc;
 	};
