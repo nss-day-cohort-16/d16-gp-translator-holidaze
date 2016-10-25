@@ -6,24 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Group Translator</title>
 
-        <link rel="author" href="humans.txt">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-		<h3>Please type one or all of the following words into the input field. Then, select your language and press the translate button.</h3>
+        <h3>Please type one or all of the following words into the input field. Then, select your language and press the translate button.</h3>
 
-    	<textarea class="textArea"></textarea>
+        <textarea id="textArea"></textarea>
 
-    	<select class="selector">
-    		<option value="German">German</option>
-    		<option value="Tagalog">Tagalog</option>
-    		<option value="French">French</option>
-    		<option value="Italian">Italian</option>
-    	</select>
+        <select class="selector" id="language">
+            <option value="German">German</option>
+            <option value="Tagalog">Tagalog</option>
+            <option value="French">French</option>
+            <option value="Italian">Italian</option>
+        </select>
 
-    	<button type="button">Translate</button>
+        <button type="button" id="translateButton">Translate</button>
 
-    	<div class="emptyDiv"></div>
+        <div id="emptyDiv"></div>
 
-        <script src="javascripts/german.js"></script>
+        <script src="javascripts/tagalog.js"></script>
+        <!-- <script src="javascripts/german.js"></script> -->
+        <!-- <script src="javascripts/french.js"></script> -->
+        <!-- <script src="javascripts/italian.js"></script> -->
+        <script src="translate.js"></script>
     </body>
 </html>
